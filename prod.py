@@ -3,7 +3,7 @@ import os
 # Server Specific Configurations
 server = {
     'port': os.environ.get('PULPITO_SERVER_PORT', '8081'),
-    'host': os.environ.get('PULPITO_SERVER_HOST', '172.23.232.5')
+    'host': os.environ.get('PULPITO_SERVER_HOST', '172.23.232.4')
 }
 
 # In the ceph-cm-ansible pulpito role the setup_pulpito task
@@ -12,7 +12,7 @@ server = {
 
 # paddles_address = 'http://sentry.front.sepia.ceph.com:8080'
 # paddles_address = os.environ.get('PULPITO_PADDLES_ADDRESS', paddles_address)
-paddles_address = os.environ.get('PULPITO_PADDLES_ADDRESS', 'http://172.23.232.5:8080')
+paddles_address = os.environ.get('PULPITO_PADDLES_ADDRESS', 'http://172.23.232.4:8080')
 
 # Pecan Application Configurations
 app = {
